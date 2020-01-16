@@ -49,7 +49,8 @@ def halo2():
     arg1= request.args.get("arg1")
     arg2= request.args.get("arg2")
     arg3= request.args.get("arg3")
-    return arg2
+    stringg=arg1+arg2+arg3
+    return eval(stringg)
 
 # If we're running in stand alone mode, run the application
 if __name__ == '__main__':
