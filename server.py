@@ -42,15 +42,11 @@ def api_all():
 
 @app.route("/api/<arg1>/<arg2>/<arg3>", methods=["GET"])
 def halo(arg1,arg2,arg3):
-    arg1 = User.query.get(arg1)
-    arg2 = User.query.get(arg2)
-    arg3 = User.query.get(arg3)
+
     return user_schema.jsonify(arg2)
 
 @app.route("/apiľ/<arg1>", methods=["GET"])
 def halo(arg1):
-    arg1 = User.query.get(arg1)
-
     return user_schema.jsonify(arg1)
 
 # If we're running in stand alone mode, run the application
