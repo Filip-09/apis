@@ -44,7 +44,7 @@ def api_all():
 def halo(arg1,arg2,arg3):
     return user_schema.jsonify(arg2)
 
-@app.route("/api2", methods=["GET"])
+@app.route("/api2/", methods=["GET"])
 def halo2():
     arg1= request.args.get("arg1")
     arg2= request.args.get("arg2")
