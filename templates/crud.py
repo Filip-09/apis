@@ -53,12 +53,12 @@ def get_user():
 
 
 # endpoint to get user detail by id
-@app.route("/user/<arg1>/<arg2>/<arg3>", methods=["GET"])
-def user_detail(arg1,arg2,arg3):
-    arg1 = User.query.get(arg1)
-    arg2 = User.query.get(arg2)
-    arg3 = User.query.get(arg3)
-    return user_schema.jsonify(arg2)
+# @app.route("/user/<arg1>/<arg2>/<arg3>", methods=["GET"])
+# def user_detail(arg1,arg2,arg3):
+#     arg1 = User.query.get(arg1)
+#     arg2 = User.query.get(arg2)
+#     arg3 = User.query.get(arg3)
+#     return user_schema.jsonify(arg2)
 
 
 # endpoint to update user
