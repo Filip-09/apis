@@ -49,7 +49,7 @@ def halo2():
     arg1= request.args.get("arg1")
     arg2= request.args.get("arg2")
     arg3= request.args.get("arg3")
-    return user_schema.jsonify(arg2)
+    return arg2
 
 # If we're running in stand alone mode, run the application
 if __name__ == '__main__':
